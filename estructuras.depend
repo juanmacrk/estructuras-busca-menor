@@ -4,8 +4,17 @@
 	<stdlib.h>
 	"conio.h"
 
-1716135914 source:c:\users\lquerales\desktop\estructuras-busca-menor\main.c
+1716153295 source:c:\users\lquerales\desktop\estructuras-busca-menor\main.c
 	<stdio.h>
 	<stdlib.h>
 	"conio.h"
+	"alumno.h"
+
+1716153032 source:c:\users\lquerales\desktop\estructuras-busca-menor\alumno.c
+	<stdio.h>
+	<stdlib.h>
+	"conio.h"
+	"alumno.h"
+
+1716153140 c:\users\lquerales\desktop\estructuras-busca-menor\alumno.h
 

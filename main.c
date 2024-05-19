@@ -1,21 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "conio.h"
+#include "alumno.h"
 #define DIM 100
-///estructuras
-
-typedef struct
-{
-    int nota;
-    int matricula;
-    char nombre[30];
-    char apellido[30];
-} stAlumno;
 
 ///prototipados
 
-stAlumno cargaUnAlumno ();
-void muestraUnAlumno ();
 void muestraAlumnoS (stAlumno a[],int v);
 int buscaPosicionMenorStAlumnoPro (stAlumno a[],int v,int pos);
 void ordenaArregloPorSeleccionStalumnosPro (stAlumno a[],int v);
@@ -24,50 +14,20 @@ void intercambioStAlumno(stAlumno *a,stAlumno *b);
 ///main
 int main()
 {
-
     stAlumno alumnos[DIM];
     int vAlumnos=0;
 
     vAlumnos=cargaAlumnoS(alumnos,DIM);
     muestraAlumnoS (alumnos,vAlumnos);
-system("cls");
+    system("cls");
     ordenaArregloPorSeleccionStalumnosPro (alumnos,vAlumnos);
+
+    printf("\n-----------Lita de Alumnos--------------\n");
     muestraAlumnoS(alumnos,vAlumnos);
 
-
-    printf("Hello world!\n");
     return 0;
 }
-///funcion carga alumno
 
-stAlumno cargaUnAlumno ()
-{
-    stAlumno a;
-    printf ("Carga de un alumno \n");
-
-    printf ("Matricula: ");
-    scanf("%d",&a.matricula);
-    fflush(stdin);
-    printf ("Apellido:");
-    gets(a.apellido);
-    fflush(stdin);
-    printf ("Nombre:");
-    gets(a.nombre);
-    printf ("Nota:");
-    scanf("%d",&a.nota);
-
-    return a;
-}
-///funcion muestra un alumno
-
-void muestraUnAlumno (stAlumno a)
-{
-    printf ("\n==================================================\n");
-    printf ("\Matricula.........:%d\n",a.matricula);
-    printf ("\Nombre............:%s %s\n",a.apellido,a.nombre);
-    printf ("Nota..............:%d",a.nota);
-    printf ("\n==================================================\n");
-}
 ///funcion carga alumnos
 
 int   cargaAlumnoS (stAlumno a[],int dim)
@@ -112,8 +72,6 @@ int buscaPosicionMenorStAlumnoPro (stAlumno a[],int v,int pos)
     }
     return posMenor;
 }
-
-
 
 
 void ordenaArregloPorSeleccionStalumnosPro (stAlumno a[],int v)
