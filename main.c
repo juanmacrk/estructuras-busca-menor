@@ -43,17 +43,17 @@ system("cls");
 stAlumno cargaUnAlumno ()
 {
     stAlumno a;
-    printf ("carga de un alumno \n");
+    printf ("Carga de un alumno \n");
 
-    printf ("ingrese el numero de matricula :\n ");
+    printf ("Matricula: ");
     scanf("%d",&a.matricula);
     fflush(stdin);
-    printf ("ingrese el apellido :\n");
+    printf ("Apellido:");
     gets(a.apellido);
     fflush(stdin);
-    printf ("ingrese el nombre :\n");
+    printf ("Nombre:");
     gets(a.nombre);
-    printf ("ingrese la nota : \n");
+    printf ("Nota:");
     scanf("%d",&a.nota);
 
     return a;
@@ -63,9 +63,9 @@ stAlumno cargaUnAlumno ()
 void muestraUnAlumno (stAlumno a)
 {
     printf ("\n==================================================\n");
-    printf ("\nmatricula.........:%d\n",a.matricula);
-    printf ("\nnombre............:%s %s\n",a.apellido,a.nombre);
-    printf ("\nnota..............:%d\n",a.nota);
+    printf ("\Matricula.........:%d\n",a.matricula);
+    printf ("\Nombre............:%s %s\n",a.apellido,a.nombre);
+    printf ("Nota..............:%d",a.nota);
     printf ("\n==================================================\n");
 }
 ///funcion carga alumnos
