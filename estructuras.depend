@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1716082713 source:c:\users\juanma\desktop\programacion laboratorio  librerias codeblock\estructuras sabado1805\estructuras\main.c
+	<stdio.h>
+	<stdlib.h>
+	"conio.h"
+
