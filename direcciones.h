@@ -8,7 +8,9 @@ typedef struct{
     char calle[];
     int altura;
 
-
 }stDirecciones;
+
+stDirecciones cargaUnaDireccion();
+void muestraUnaDireccion();
 
 #endif // DIRECCIONES_H_INCLUDED

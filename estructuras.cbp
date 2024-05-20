@@ -35,6 +35,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="alumno.h" />
+		<Unit filename="direcciones.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
