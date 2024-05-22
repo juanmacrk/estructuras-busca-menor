@@ -3,9 +3,9 @@
 
 typedef struct{
 
-    char provincia[];
-    char localidad[];
-    char calle[];
+    char provincia[1];
+    char localidad[2];
+    char calle[3];
     int altura;
 
 }stDirecciones;
